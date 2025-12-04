@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-main {
+    font-family: "Jost", sans-serif;
+}
+
+.header-main .header-top {
+    padding: 14px 0;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0;
+    display: block;
+}
+
+.conatiner {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* header top */
+
+.top-content {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 15px;
+    color: #444444;
+}
+
+.top-content .top-left-content {
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+}
+
+.top-content .top-right-content {
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+.top-content .top-left-content .lang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-content .top-left-content .lang .down-arrow-icon {
+    font-size: 16px;
+    height: 18px;
+    font-weight: 300;
+}
+
+.top-content .top-left-content .curr {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-content .top-left-content .curr .down-arrow-icon {
+    font-size: 16px;
+    height: 18px;
+    font-weight: 300;
+}
+
+.top-content .top-left-content .curr .dollar-icon {
+    font-size: 16px;
+    height: 16px;
+    font-weight: 300;
+}
+
+.top-content .top-left-content .lang::after {
+    content: "|";
+    padding-left: 13px;
+    color: #737373;
+}
+
+.top-content .top-right-content .sign-in-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.top-content .top-right-content .sign-in-content .sign-in-icon {
+    font-size: 14px;
+    height: 15px;
+    font-weight: 400;
+
+}
+
+.top-content .top-right-content .new-acc-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.top-content .top-right-content .new-acc-content .new-acc-icon {
+    font-size: 16px;
+    height: 15px;
+    font-weight: 400;
+
+}
+
+.top-content .top-right-content .sign-in-content:hover,
+.top-content .top-right-content .new-acc-content:hover {
+    color: #60c97b;
+}
+
+/* header top end */
+
+
+/* header center content */
+
+.header-main .header-center {
+    padding: 20px 0;
+    margin: 0;
+    display: block;
+}
+
+.inner-header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 385px;
+}
+
+.inner-header-center * {
+    vertical-align: middle;
+}
+
+
+.inner-header-center .center-right-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.inner-header-center .center-left-content .header-logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #60c97b;
+    cursor: pointer;
+}
+
+.inner-header-center .center-right-content .search-box input {
+    width: 400px;
+    align-items: center;
+    padding: 17px 45px 17px 15px;
+    border-radius: 4px;
+    border: none;
+    line-height: 1;
+    background-color: #eae8e8;
+    border-radius: 0;
+    box-shadow: #eae8e8 0px 0px 2px 1px;
+}
+
+.search-box input::placeholder {
+    color: #b4b4b4;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.inner-header-center .center-right-content .cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.inner-header-center .center-right-content .cart .shopping-cart-icon {
+    font-size: 24px;
+    height: 26px;
+    font-weight: 400;
+    padding: 0 11.5px;
+    background-color: #2c3444;
+    color: #fff;
+}
+
+.inner-header-center .center-right-content .cart .shopping-cart-icon:hover {
+    color: #60c97b;
+}
+
+.inner-header-center .center-right-content .cart .cart-info {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #60c97b;
+    padding: 0 28px;
+}
+
+.inner-header-center .center-right-content .cart .shopping-cart-icon,
+.inner-header-center .center-right-content .cart .cart-info {
+    height: 50px;
+    line-height: 47px;
+}
+
+.inner-header-center .center-right-content .search-box {
+    position: relative;
+}
+
+.inner-header-center .center-right-content .search-box .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.inner-header-center .center-right-content .search-box .search-icon:hover {
+    color: #60c97b;
+    transition-duration: 0.3s;
+}
