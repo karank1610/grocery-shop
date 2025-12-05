@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { LiaDollarSignSolid } from "react-icons/lia";
 import { FaSignInAlt, FaUserPlus } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
@@ -47,11 +47,11 @@ const Header = () => {
                             </div>
                             <div className="center-right-content">
                                 <div className="search-box">
-                                    <input type="text" placeholder="search our catalog"/>
-                                    <IoSearch className="search-icon"/>
+                                    <input type="text" placeholder="search our catalog" />
+                                    <IoSearch className="search-icon" />
                                 </div>
                                 <div className="cart">
-                                    <GiShoppingBag className="shopping-cart-icon"/>
+                                    <GiShoppingBag className="shopping-cart-icon" />
                                     <div className="cart-info">
                                         <span>Item(s)</span>
                                     </div>
@@ -60,7 +60,45 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="header-bottom"></div>
+                <div className="header-bottom">
+                    <div className="container">
+                        <div className="inner-header-bottom">
+                            <ul className="nav-menu">
+                                <li><a href=""><span>home</span></a></li>
+                                <li>
+                                    <a href="">
+                                        <span>shop</span>
+                                        <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
+                                        <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>electronics</span>
+                                        <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
+                                        <MdOutlineKeyboardArrowUp className="up-arrow-icon"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>sports & books</span>
+                                        <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
+                                        <MdOutlineKeyboardArrowUp className="up-arrow-icon"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""><span>sale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>contact us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
