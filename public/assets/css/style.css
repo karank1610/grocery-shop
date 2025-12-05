@@ -238,20 +238,21 @@ body {
 }
 
 
-.header-bottom .inner-header-bottom{
+.header-bottom .inner-header-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     display: block;
 }
 
-li{
+li {
     list-style: none;
 }
+
 .inner-header-bottom .nav-menu {
     display: flex;
     margin: 0;
@@ -273,6 +274,7 @@ li{
     font-weight: 300;
     transform: translateY(3px);
 }
+
 .inner-header-bottom .nav-menu .up-arrow-icon {
     font-size: 16px;
     font-weight: 300;
@@ -297,6 +299,185 @@ li{
 
 /* sub navigation menu */
 
+.nav-menu>li {
+    position: relative;
+}
+
+.nav-menu>li .shop-sub-menu,
+.electronics-sub-menu,
+.sb-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: #e8e8e8 0px 2px 2px 1px;
+    background-color: #fff;
+    width: 230px;
+    padding: 10px 0;
+}
+
+.nav-menu>li .shop-sub-menu li a,
+.electronics-sub-menu li a,
+.sb-sub-menu li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.nav-menu>li .shop-sub-menu li a:hover,
+.electronics-sub-menu li a:hover,
+.sb-sub-menu li a:hover {
+    color: #60c97b;
+}
+
+.nav-menu>li:hover .shop-sub-menu,
+.nav-menu>li:hover .electronics-sub-menu,
+.nav-menu>li:hover .sb-sub-menu {
+    display: block;
+}
+
+.inner-header-bottom .nav-menu .right-arrow-icon {
+    font-size: 16px;
+    font-weight: 300;
+    transform: translateY(3px);
+}
+
+.inner-header-bottom .nav-menu>li>.shop-sub-menu li a .right-arrow-icon,
+.inner-header-bottom .nav-menu>li>.electronics-sub-menu li a .right-arrow-icon,
+.inner-header-bottom .nav-menu>li>.sb-sub-menu li a .right-arrow-icon {
+    display: none;
+}
+
+.inner-header-bottom .nav-menu>li>.shop-sub-menu li a:hover .right-arrow-icon,
+.inner-header-bottom .nav-menu>li>.electronics-sub-menu li a:hover .right-arrow-icon,
+.inner-header-bottom .nav-menu>li>.sb-sub-menu li a:hover .right-arrow-icon {
+    display: block;
+}
+
+.inner-header-bottom .nav-menu>li>.shop-sub-menu li a:hover .down-arrow-icon,
+.inner-header-bottom .nav-menu>li>.electronics-sub-menu li a:hover .down-arrow-icon,
+.inner-header-bottom .nav-menu>li>.sb-sub-menu li a:hover .down-arrow-icon {
+    display: none;
+}
+
+/* inside sub navigation menu */
+
+/* shop sub navigation */
+
+.fashion-sub-menu {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.jewellery-sub-menu {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.furniture-sub-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.autoparts-sub-menu {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.shop-sub-menu>li:hover .fashion-sub-menu,
+.shop-sub-menu>li:hover .jewellery-sub-menu,
+.shop-sub-menu>li:hover .furniture-sub-menu,
+.shop-sub-menu>li:hover .autoparts-sub-menu {
+    display: block;
+}
+
+/* electronics sub navigation */
+
+.mobiles-sub-menu {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.cameras-sub-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.electronics-sub-menu>li:hover .mobiles-sub-menu,
+.electronics-sub-menu>li:hover .cameras-sub-menu {
+    display: block;
+}
+
+/* sports and books sub menu */
+
+.sports-sub-menu {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.books-sub-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    box-shadow: #e8e8e8 1px 1px 1px 1px;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.sb-sub-menu>li:hover .sports-sub-menu,
+.sb-sub-menu>li:hover .books-sub-menu {
+    display: block;
+}
 
 
 /* sub navigation menu end */
+
+/* header bottom content end */
