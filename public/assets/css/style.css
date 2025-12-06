@@ -4,6 +4,11 @@ body {
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+    display: block;
+}
+
 .header-main {
     font-family: "Jost", sans-serif;
 }
@@ -481,3 +486,63 @@ li {
 /* sub navigation menu end */
 
 /* header bottom content end */
+
+/* banner main */
+
+.banner-main {
+    font-family: "Jost", sans-serif;
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+.banner-main .static-banner-1{
+    position: relative;
+}
+
+.banner-main .static-banner-1 .banner-text{
+    position: absolute;
+    top: 42%;
+    left: 18%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.banner-main .static-banner-1 .banner-text p{
+    font-size: 44px;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.banner-main .static-banner-1 .banner-text p span{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.banner-main .static-banner-1 .banner-text p span strong{
+    font-size: 100px;
+}
+
+.banner-main .static-banner-1 .banner-shop-button{
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    transform: translateY(-50%);
+}
+
+.banner-main .static-banner-1 .banner-shop-button a{
+    background-color: #2c3444;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+.banner-main .static-banner-1 .banner-shop-button a:hover{
+    background-color: #000000;
+}
