@@ -2,15 +2,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jost", sans-serif;
 }
 
-img{
+img {
     width: 100%;
     display: block;
 }
 
 .header-main {
     font-family: "Jost", sans-serif;
+    z-index: 1000;
 }
 
 .header-main .header-top {
@@ -261,6 +263,7 @@ li {
 .inner-header-bottom .nav-menu {
     display: flex;
     margin: 0;
+    z-index: 1000;
 }
 
 .inner-header-bottom .nav-menu>li>a {
@@ -496,11 +499,11 @@ li {
     padding: 0;
 }
 
-.banner-main .static-banner-1{
+.banner-main .static-banner-1 {
     position: relative;
 }
 
-.banner-main .static-banner-1 .banner-text{
+.banner-main .static-banner-1 .banner-text {
     position: absolute;
     top: 42%;
     left: 18%;
@@ -508,32 +511,32 @@ li {
     color: #fff;
 }
 
-.banner-main .static-banner-1 .banner-text p{
+.banner-main .static-banner-1 .banner-text p {
     font-size: 44px;
     text-align: left;
     text-transform: capitalize;
     line-height: 1.2;
 }
 
-.banner-main .static-banner-1 .banner-text p span{
+.banner-main .static-banner-1 .banner-text p span {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 1.1;
 }
 
-.banner-main .static-banner-1 .banner-text p span strong{
+.banner-main .static-banner-1 .banner-text p span strong {
     font-size: 100px;
 }
 
-.banner-main .static-banner-1 .banner-shop-button{
+.banner-main .static-banner-1 .banner-shop-button {
     position: absolute;
     top: 70%;
     left: 18%;
     transform: translateY(-50%);
 }
 
-.banner-main .static-banner-1 .banner-shop-button a{
+.banner-main .static-banner-1 .banner-shop-button a {
     background-color: #2c3444;
     color: #fff;
     padding: 15px 40px;
@@ -543,6 +546,82 @@ li {
     transition-duration: 0.3s;
 }
 
-.banner-main .static-banner-1 .banner-shop-button a:hover{
+.banner-main .static-banner-1 .banner-shop-button a:hover {
     background-color: #000000;
 }
+
+/* banner main end */
+
+/* category main */
+
+/* category heading */
+
+.category-heading-main {
+    margin: 25px 0;
+    display: block;
+    text-align: center;
+}
+
+.category-heading-main .category-heading-child{
+    font-size: 40px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-heading-main .category-heading-child::after,
+.category-heading-main .category-heading-child::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #7ac28c;
+
+}
+
+/* category row */
+
+.category-main{
+    margin: 40px 0;
+}
+
+.category-main .container{
+    max-width: 100%;
+    padding: 0 130px;
+}
+
+.category-main .category-child-main{
+    display: flex;
+    gap: 20px;
+}
+
+.category-main .category-child-main .category-child{
+    width: 12.5%;
+}
+
+.category-main .category-child-main .category-child .category-name{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.category-main .category-child-main .category-child .category-img img{
+    transition: transform 0.4s ease;
+}
+
+.category-main .category-child-main .category-child:hover .category-img img {
+    transform: scale(1.05);
+}
+
+.category-main .category-child-main .category-child:hover .category-name {
+    color: #60c97b;
+    transition-duration: 0.3s;
+}
+
+.category-main .category-child-main .category-child .category-img{
+    overflow: hidden;
+}
+
+/* category main end */

@@ -1,12 +1,14 @@
 import React from "react";
-import Header from "./Header";
-import Banner from "./Banner";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import HomeCategory from "./components/HomeCategory";
 
 const Home = () => {
     return (
         <>
         <Header/>
         <Banner/>
+        <HomeCategory/>
         </>
     )
 }
