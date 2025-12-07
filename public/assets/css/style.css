@@ -837,3 +837,36 @@ li {
 }
 
 /* collection block end */
+
+/* ad block 2 */
+
+.ad2-main {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: block;
+}
+
+.ad2-main .container {
+    max-width: 100%;
+    padding: 0 50px;
+}
+
+.ad2-main .ad2-child-main {
+    display: flex;
+    gap: 30px;
+}
+
+.ad2-main .ad2-child-main .ad2-child {
+    width: 20%;
+    overflow: hidden;
+}
+
+.ad2-main .ad2-child-main .ad2-child img {
+    transition: transform 0.4s ease;
+}
+
+.ad2-main .ad2-child-main .ad2-child:hover img {
+    transform: scale(1.05);
+}
+
+/* ad block 2 end */

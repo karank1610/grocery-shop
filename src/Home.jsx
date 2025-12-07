@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import HomeCategory from "./components/HomeCategory";
 import AdBlock1 from "./components/AdBlock1";
 import Collection from "./components/Collection";
+import AdBlock2 from "./components/AdBlock2";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
         <HomeCategory/>
         <AdBlock1/>
         <Collection/>
+        <AdBlock2/>
         </>
     )
 }
