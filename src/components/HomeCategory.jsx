@@ -1,4 +1,5 @@
 import CategoryProps from "../props/CategoryProps";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const HomeCategory = () => {
     return (
@@ -12,6 +13,7 @@ const HomeCategory = () => {
             </div>
             <div className="category-main">
                 <div className="container">
+                    <IoIosArrowBack className="category-arrow-left" />
                     <div className="category-child-main">
                         <CategoryProps img={'assets/img/category1.jpg'} name={'vegetables'} />
                         <CategoryProps img={'assets/img/category2.jpg'} name={'energy'} />
@@ -22,6 +24,7 @@ const HomeCategory = () => {
                         <CategoryProps img={'assets/img/category7.jpg'} name={'oil'} />
                         <CategoryProps img={'assets/img/category8.jpg'} name={'beverages'} />
                     </div>
+                    <IoIosArrowForward className="category-arrow-right" />
                 </div>
             </div>
         </>
