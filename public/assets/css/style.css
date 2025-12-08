@@ -838,9 +838,10 @@ li {
 
 /* collection new and on sale text */
 
-.collection-main .collection-child-main .collection-child{
+.collection-main .collection-child-main .collection-child {
     position: relative;
 }
+
 .collection-main .collection-child-main .collection-child .collection-new-text,
 .collection-main .collection-child-main .collection-child .collection-sale-text {
     position: absolute;
@@ -855,12 +856,55 @@ li {
     border-radius: 2px;
 }
 
-.collection-main .collection-child-main .collection-child .collection-sale-text{
+.collection-main .collection-child-main .collection-child .collection-sale-text {
     left: auto;
     right: 25px;
     background-color: rgb(139, 143, 152);
 
 }
+
+/* quick view popup */
+
+.collection-main .collection-child-main .collection-child .collection-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-main .collection-child-main .collection-child .collection-img .quick-view-popup {
+    display: block;
+    position: absolute;
+    bottom: -44px;
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.1);
+    padding: 13px 0;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.collection-main .collection-child-main .collection-child:hover .collection-img .quick-view-popup {
+    bottom: 0;
+    opacity: 1;
+}
+
+.collection-main .collection-child-main .collection-child .collection-img .quick-view-popup a {
+    display: block;
+    line-height: 1;
+    color: #555555;
+    background-color: #fff;
+    width: 100px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 2px 0;
+}
+
+.collection-main .collection-child-main .collection-child .collection-img .quick-view-popup a:hover {
+    color: #000000;
+    transition-duration: 0.3s;
+}
+
+
+
 
 /* collection block end */
 

@@ -6,6 +6,7 @@ const CollectionProps = (props) => {
             <div className="collection-child">
                 <div className="collection-img">
                     <a href=""><img src={props.img} alt="collection" /></a>
+                    <div className="quick-view-popup"><a href="">quick view</a></div>
                 </div>
                 {props.isNew && <div className="collection-new-text">New</div>}
                 {props.isOnSale && <div className="collection-sale-text">on Sale!</div>}
