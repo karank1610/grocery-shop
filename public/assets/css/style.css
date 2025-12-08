@@ -903,9 +903,6 @@ li {
     transition-duration: 0.3s;
 }
 
-
-
-
 /* collection block end */
 
 /* ad block 2 */
@@ -940,3 +937,175 @@ li {
 }
 
 /* ad block 2 end */
+
+/* new product block */
+
+/* new product heading */
+
+.new-product-heading-main {
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+}
+
+.new-product-heading-main .new-product-heading-child {
+    font-size: 40px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.new-product-heading-main .new-product-heading-child i {
+    color: #60c97b;
+}
+
+.new-product-heading-main .new-product-heading-child::after,
+.new-product-heading-main .new-product-heading-child::before {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background: #7ac28c;
+
+}
+
+/* new product row block */
+
+.new-product-main {
+    margin: 20px 0;
+    display: block;
+}
+
+.new-product-main .new-product-child-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.new-product-main .new-product-child-main .new-product-child {
+    width: 25%;
+    cursor: pointer;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-details .new-product-name {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-details .new-product-name:hover {
+    color: #60c97b;
+    transition-duration: 0.3s;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-details .new-product-price {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.new-product-main .new-product-child .new-product-details .new-product-shop-btn {
+    display: flex;
+
+}
+
+.new-product-main .new-product-child .new-product-details .new-product-shop-btn p {
+    margin: 0;
+}
+
+.new-product-main .new-product-child .new-product-details .new-product-shop-btn a {
+    background-color: #60c97b;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+}
+
+.new-product-main .new-product-child .new-product-details .new-product-shop-btn a:hover {
+    background-color: #2c3444;
+}
+
+/* new product's new and on sale text */
+
+.new-product-main .new-product-child-main .new-product-child {
+    position: relative;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-new-text,
+.new-product-main .new-product-child-main .new-product-child .new-product-sale-text {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background-color: #2c3444;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-sale-text {
+    left: auto;
+    right: 25px;
+    background-color: rgb(139, 143, 152);
+
+}
+
+/* quick view popup */
+
+.new-product-main .new-product-child-main .new-product-child .new-product-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-img .quick-view-popup {
+    display: block;
+    position: absolute;
+    bottom: -44px;
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.1);
+    padding: 13px 0;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.new-product-main .new-product-child-main .new-product-child:hover .new-product-img .quick-view-popup {
+    bottom: 0;
+    opacity: 1;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-img .quick-view-popup a {
+    display: block;
+    line-height: 1;
+    color: #555555;
+    background-color: #fff;
+    width: 100px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 2px 0;
+}
+
+.new-product-main .new-product-child-main .new-product-child .new-product-img .quick-view-popup a:hover {
+    color: #000000;
+    transition-duration: 0.3s;
+}
+
+
+/* new product block end */

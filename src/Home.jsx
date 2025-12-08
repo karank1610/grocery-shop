@@ -5,6 +5,7 @@ import HomeCategory from "./components/HomeCategory";
 import AdBlock1 from "./components/AdBlock1";
 import Collection from "./components/Collection";
 import AdBlock2 from "./components/AdBlock2";
+import NewProduct from "./components/NewProduct";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
         <AdBlock1/>
         <Collection/>
         <AdBlock2/>
+        <NewProduct/>
         </>
     )
 }
