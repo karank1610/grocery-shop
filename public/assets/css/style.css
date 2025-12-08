@@ -836,6 +836,32 @@ li {
     background-color: #2c3444;
 }
 
+/* collection new and on sale text */
+
+.collection-main .collection-child-main .collection-child{
+    position: relative;
+}
+.collection-main .collection-child-main .collection-child .collection-new-text,
+.collection-main .collection-child-main .collection-child .collection-sale-text {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background-color: #2c3444;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.collection-main .collection-child-main .collection-child .collection-sale-text{
+    left: auto;
+    right: 25px;
+    background-color: rgb(139, 143, 152);
+
+}
+
 /* collection block end */
 
 /* ad block 2 */
