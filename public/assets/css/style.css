@@ -1109,3 +1109,89 @@ li {
 
 
 /* new product block end */
+
+/* brand block */
+
+.brand-heading-main {
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+}
+
+.brand-heading-main .brand-heading-child {
+    font-size: 40px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand-heading-main .brand-heading-child i {
+    color: #60c97b;
+}
+
+.brand-heading-main .brand-heading-child::after,
+.brand-heading-main .brand-heading-child::before {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background: #7ac28c;
+}
+
+/* brand row */
+
+.brand-main {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.brand-main .container {
+    overflow: hidden;
+}
+
+.brand-main .brand-child-main {
+    display: flex;
+    animation: slide 25s ease infinite;
+}
+
+.brand-main .brand-child-main .brand-child {
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-main .brand-child-main img {
+    width: 160px;
+}
+
+@keyframes slide {
+0%   { transform: translateX(0); }
+  10%  { transform: translateX(0); }     
+  
+  15%  { transform: translateX(-20%); }
+  25%  { transform: translateX(-20%); }  
+  
+  30%  { transform: translateX(-40%); }
+  40%  { transform: translateX(-40%); }   
+  
+  45%  { transform: translateX(-60%); }
+  55%  { transform: translateX(-60%); }   
+  
+  60%  { transform: translateX(-80%); }
+  70%  { transform: translateX(-80%); }   
+  
+  75%  { transform: translateX(-60%); }
+  85%  { transform: translateX(-60%); }      
+
+  87%  { transform: translateX(-40%); }
+  92%  { transform: translateX(-40%); }     
+
+  94%  { transform: translateX(-20%); }
+  97%  { transform: translateX(-20%); }    
+
+  100% { transform: translateX(0); } 
+}
+
+/* brand block end */

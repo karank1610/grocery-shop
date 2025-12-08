@@ -6,6 +6,7 @@ import AdBlock1 from "./components/AdBlock1";
 import Collection from "./components/Collection";
 import AdBlock2 from "./components/AdBlock2";
 import NewProduct from "./components/NewProduct";
+import BrandBlock from "./components/BrandBlock";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Collection/>
         <AdBlock2/>
         <NewProduct/>
+        <BrandBlock/>
         </>
     )
 }
