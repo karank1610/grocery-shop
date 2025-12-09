@@ -7,6 +7,7 @@ import Collection from "./components/Collection";
 import AdBlock2 from "./components/AdBlock2";
 import NewProduct from "./components/NewProduct";
 import BrandBlock from "./components/BrandBlock";
+import Footer from "./components/Footer";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
         <AdBlock2/>
         <NewProduct/>
         <BrandBlock/>
+        <Footer/>
         </>
     )
 }

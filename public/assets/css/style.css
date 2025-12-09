@@ -1195,3 +1195,87 @@ li {
 }
 
 /* brand block end */
+
+/* footer main */
+
+.footer-main{
+    margin: 0;
+    padding: 40px 0 0 0;
+    display: block;
+}
+
+/* footer top */
+
+.footer-main .footer-top{
+    background-color: #f7f8fc;
+    padding: 20px 0;
+}
+
+.footer-main .footer-top .top-inner{
+    padding: 20px 0;
+}
+
+.footer-main .footer-top .top-inner .services-main{
+    display: flex;
+}
+
+.footer-main .footer-top .top-inner .services-main .services-child{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.footer-main .footer-top .top-inner .services-main .services-child .services-content span{
+    color: #555555;
+    font-size: 14px;
+}
+
+.footer-main .footer-top .top-inner .services-main .services-child .services-content span strong{
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* footer top end */
+
+/* footer center */
+
+
+
+/* footer center end */
+
+/* footer bottom */
+
+.footer-main .footer-bottom{
+    padding: 20px 0;
+}
+
+.footer-main .footer-bottom .bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.footer-main .footer-bottom .bottom-inner .copyright a{
+    font-size: 14px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.footer-main .footer-bottom .bottom-inner .payment .payment-icon{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-main .footer-bottom .bottom-inner .payment .payment-icon a{
+    font-size: 34px;
+    color: #555555;
+}
+
+/* footer bottom end */
+
+/* footer main end */
