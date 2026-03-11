@@ -267,7 +267,7 @@ li {
 }
 
 .inner-header-bottom .nav-menu>li>a {
-    padding: 17px 25px;
+    padding: 17px 20px;
     color: #ffffff;
     text-transform: capitalize;
     font-size: 16px;
@@ -302,6 +302,20 @@ li {
     display: inline-block;
 }
 
+.inner-header-bottom .nav-menu .upper-text{
+    position: absolute;
+    color: #fff;
+    font-size: 9px;
+    top: 5px;
+    border-radius: 2px;
+    padding: 2px;
+    right: 30px;
+    line-height: 1;
+}
+
+
+
+
 /* parent navigation menu end */
 
 
@@ -313,7 +327,7 @@ li {
 
 .nav-menu>li .shop-sub-menu,
 .electronics-sub-menu,
-.sb-sub-menu {
+.sb-sub-menu,.pages-sub-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -326,7 +340,8 @@ li {
 
 .nav-menu>li .shop-sub-menu li a,
 .electronics-sub-menu li a,
-.sb-sub-menu li a {
+.sb-sub-menu li a,
+.pages-sub-menu li a {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -338,13 +353,16 @@ li {
 
 .nav-menu>li .shop-sub-menu li a:hover,
 .electronics-sub-menu li a:hover,
-.sb-sub-menu li a:hover {
+.sb-sub-menu li a:hover,
+.pages-sub-menu li a:hover {
     color: #60c97b;
 }
 
 .nav-menu>li:hover .shop-sub-menu,
 .nav-menu>li:hover .electronics-sub-menu,
-.nav-menu>li:hover .sb-sub-menu {
+.nav-menu>li:hover .sb-sub-menu,
+.nav-menu>li:hover .pages-sub-menu
+ {
     display: block;
 }
 

@@ -67,10 +67,24 @@ const Header = () => {
                                 <li><a href=""><span>home</span></a></li>
                                 <li>
                                     <a href="">
+                                        <span>pages</span>
+                                        <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
+                                        <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
+                                    </a>
+                                    <ul className="pages-sub-menu">
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">404</a></li>
+                                        <li><a href="">Pricing</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
                                         <span>shop</span>
                                         <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
                                         <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
                                     </a>
+                                    <div className="upper-text" style={{backgroundColor: '#0cc485'}}>NEW</div>
                                     <ul className="shop-sub-menu">
                                         <li>
                                             <a href="">
@@ -131,6 +145,7 @@ const Header = () => {
                                         <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
                                         <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
                                     </a>
+                                    <div className="upper-text" style={{backgroundColor: '#eb2771'}}>HOT</div>
                                     <ul className="electronics-sub-menu">
                                         <li>
                                             <a href="">
