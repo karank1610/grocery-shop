@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import HomeCategory from "./components/HomeCategory";
@@ -11,9 +11,13 @@ import Footer from "./components/Footer";
 import Blogs from "./components/Blogs";
 
 const Home = () => {
+        useEffect(()=>{
+            window.scrollTo(0,0);
+            document.title = "Home Page";
+        },[])
     return (
         <>
-        <Header/>
+        {/* <Header/> */}
         <Banner/>
         <HomeCategory/>
         <AdBlock1/>
@@ -22,7 +26,7 @@ const Home = () => {
         <NewProduct/>
         <Blogs/>
         <BrandBlock/>
-        <Footer/>
+        {/* <Footer/> */}
         </>
     )
 }

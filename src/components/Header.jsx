@@ -4,6 +4,7 @@ import { LiaDollarSignSolid } from "react-icons/lia";
 import { FaSignInAlt, FaUserPlus } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -64,7 +65,7 @@ const Header = () => {
                     <div className="container">
                         <div className="inner-header-bottom">
                             <ul className="nav-menu">
-                                <li><a href=""><span>home</span></a></li>
+                                <li><Link to="/"><span>home</span></Link></li>
                                 <li>
                                     <a href="">
                                         <span>pages</span>
@@ -213,9 +214,9 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <Link to="/contact">
                                         <span>contact us</span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
