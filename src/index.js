@@ -6,6 +6,7 @@ import ContactUs from './ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SignIn from './SignIn';
+import Login from './Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactUs/>} />
         <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

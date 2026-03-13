@@ -27,11 +27,11 @@ const Header = () => {
                             <div className="top-right-content">
                                 <div className="sign-in-content">
                                     <FaSignInAlt className="sign-in-icon" />
-                                    <Link to={'/signin'}>sign in</Link>
+                                    <Link to={'/login'}>sign in</Link>
                                 </div>
                                 <div className="new-acc-content">
                                     <FaUserPlus className="new-acc-icon" />
-                                    <span>create an account</span>
+                                    <Link to={'/signin'}>create an account</Link>
                                 </div>
 
                             </div>

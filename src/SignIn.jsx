@@ -28,10 +28,10 @@ const SingIn = () => {
                                 <label htmlFor="email">Email</label>
                                 <input type="email" id="email" required />
 
-                                <label htmlFor="password">password</label>
+                                <label htmlFor="password">Password</label>
                                 <input type="password" id="password" required />
 
-                                <label htmlFor="confirm-password">Confirm password</label>
+                                <label htmlFor="confirm-password">Confirm Password</label>
                                 <input type="password" id="confirm-password" required />
 
                                 <button type="submit">create an account</button>
