@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ContactUs from './ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SignIn from './SignIn';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactUs/>} />
+        <Route path='/signin' element={<SignIn/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
