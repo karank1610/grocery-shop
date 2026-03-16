@@ -96,14 +96,33 @@ img {
     transition-duration: 0.3s;
 }
 
+.top-content .top-right-content .sign-out-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
 .top-content .top-right-content .sign-in-content a,
 .top-content .top-right-content .new-acc-content a {
     color: #555555;
     transition-duration: 0.3s;
 }
 
+.top-content .top-right-content .sign-out-content a{
+    color: #555555;
+    transition-duration: 0.3s;
+}
+
 .top-content .top-right-content .sign-in-content a:hover,
 .top-content .top-right-content .new-acc-content a:hover {
+    color: #60c97b;
+}
+
+.top-content .top-right-content .sign-out-content:hover,
+.top-content .top-right-content .sign-out-content a:hover
+ {
     color: #60c97b;
 }
 

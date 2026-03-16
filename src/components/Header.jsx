@@ -1,12 +1,57 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp, MdKeyboardArrowRight } from "react-icons/md";
 import { LiaDollarSignSolid } from "react-icons/lia";
-import { FaSignInAlt, FaUserPlus } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt, FaUserPlus } from "react-icons/fa";
 import { GiShoppingBag } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { AuthContext } from "../context/AuthContext";
 
 const Header = () => {
+    // const [user, setUser] = useState(null);
+    const { user, login, logout } = useContext(AuthContext);
+
+    useEffect(() => {
+
+        const token = localStorage.getItem("token")
+
+        if (token) {
+
+            axios.post("http://localhost:5000/verify", { token })
+                .then((res) => {
+
+                    if (res.data.status === "true") {
+
+                        const name = localStorage.getItem("user")
+                        login(name)
+
+                    }
+
+                })
+                .catch(() => {
+
+                    logout();
+                    // localStorage.removeItem("token")
+                    // localStorage.removeItem("user")
+                    // setUser(null)
+
+                })
+
+        }
+
+    }, [])
+
+    // const logout = () => {
+
+    //     localStorage.removeItem("token")
+    //     localStorage.removeItem("user")
+
+    //     setUser(null)
+
+    // }
+
+
     return (
         <>
             <div className="header-main">
@@ -25,14 +70,32 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="top-right-content">
-                                <div className="sign-in-content">
-                                    <FaSignInAlt className="sign-in-icon" />
-                                    <Link to={'/login'}>sign in</Link>
-                                </div>
-                                <div className="new-acc-content">
-                                    <FaUserPlus className="new-acc-icon" />
-                                    <Link to={'/signin'}>create an account</Link>
-                                </div>
+
+                                {
+                                    user ? (
+                                        <>
+                                            <div className="welcome-msg">
+                                                <span>Welcome! {user}</span>
+                                            </div>
+
+                                            <div className="sign-out-content">
+                                                <FaSignOutAlt className="sign-out-icon" />
+                                                <Link to={'/'} onClick={logout}>Logout</Link>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <div className="sign-in-content">
+                                                <FaSignInAlt className="sign-in-icon" />
+                                                <Link to={'/login'}>sign in</Link>
+                                            </div>
+                                            <div className="new-acc-content">
+                                                <FaUserPlus className="new-acc-icon" />
+                                                <Link to={'/signin'}>create an account</Link>
+                                            </div>
+                                        </>
+                                    )
+                                }
 
                             </div>
                         </div>
@@ -85,7 +148,7 @@ const Header = () => {
                                         <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
                                         <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
                                     </a>
-                                    <div className="upper-text" style={{backgroundColor: '#0cc485'}}>NEW</div>
+                                    <div className="upper-text" style={{ backgroundColor: '#0cc485' }}>NEW</div>
                                     <ul className="shop-sub-menu">
                                         <li>
                                             <a href="">
@@ -146,7 +209,7 @@ const Header = () => {
                                         <MdOutlineKeyboardArrowDown className="down-arrow-icon" />
                                         <MdOutlineKeyboardArrowUp className="up-arrow-icon" />
                                     </a>
-                                    <div className="upper-text" style={{backgroundColor: '#eb2771'}}>HOT</div>
+                                    <div className="upper-text" style={{ backgroundColor: '#eb2771' }}>HOT</div>
                                     <ul className="electronics-sub-menu">
                                         <li>
                                             <a href="">
