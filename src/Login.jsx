@@ -19,7 +19,7 @@ const Login = () => {
 
         axios.post('http://localhost:5000/login', data).then((response) => {
             console.log(response.status);
-            if (response.data.status == 'true') {
+            if (response.data.status === 'true') {
                 const firstname = response.data.data.firstname
                 const token = response.data.token
 

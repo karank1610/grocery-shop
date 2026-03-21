@@ -57,12 +57,12 @@ const Footer = () => {
                                             <li>
                                                 <MdEmail className="mail-icon" />
                                                 <span className="label">Mail us</span>
-                                                <a href="">sales@domain.com</a>
+                                                <a href="/">sales@domain.com</a>
                                             </li>
                                             <li>
                                                 <MdPhone className="phone-icon" />
                                                 <span className="label">Phone</span>
-                                                <a href="">(123) 456 7890</a>
+                                                <a href="/">(123) 456 7890</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -71,21 +71,21 @@ const Footer = () => {
                             <div className="footer-column">
                                 <div class="column-heading">Products</div>
                                 <ul>
-                                    <li><a href="#">Prices drop</a></li>
-                                    <li><a href="#">New products</a></li>
-                                    <li><a href="#">Best sales</a></li>
-                                    <li><a href="#">Sitemap</a></li>
-                                    <li><a href="#">Stores</a></li>
+                                    <li><a href="/">Prices drop</a></li>
+                                    <li><a href="/">New products</a></li>
+                                    <li><a href="/">Best sales</a></li>
+                                    <li><a href="/">Sitemap</a></li>
+                                    <li><a href="/">Stores</a></li>
                                 </ul>
                             </div>
                             <div className="footer-column">
                                 <div class="column-heading">Our company</div>
                                 <ul>
-                                    <li><a href="#">Delivery</a></li>
-                                    <li><a href="#">Legal Notice</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Secure payment</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="/">Delivery</a></li>
+                                    <li><a href="/">Legal Notice</a></li>
+                                    <li><a href="/">About us</a></li>
+                                    <li><a href="/">Secure payment</a></li>
+                                    <li><a href="/">Contact us</a></li>
                                 </ul>
                             </div>
                             <div className="footer-column-2">
@@ -101,15 +101,15 @@ const Footer = () => {
                     <div className="container">
                         <div className="bottom-inner">
                             <div className="copyright">
-                                <a href="">© 2025 - Ecommerce software by PrestaShop™</a>
+                                <a href="/">© 2025 - Ecommerce software by PrestaShop™</a>
                             </div>
                             <div className="payment">
                                 <ul className="payment-icon">
-                                    <li><a href=""><FaCcVisa /></a></li>
-                                    <li><a href=""><FaCcPaypal /></a></li>
-                                    <li><a href=""><FaCcDiscover /></a></li>
-                                    <li><a href=""><FaCcAmex /></a></li>
-                                    <li><a href=""><FaCcMastercard /></a></li>
+                                    <li><a href="/"><FaCcVisa /></a></li>
+                                    <li><a href="/"><FaCcPaypal /></a></li>
+                                    <li><a href="/"><FaCcDiscover /></a></li>
+                                    <li><a href="/"><FaCcAmex /></a></li>
+                                    <li><a href="/"><FaCcMastercard /></a></li>
                                 </ul>
                             </div>
                         </div>

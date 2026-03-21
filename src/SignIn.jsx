@@ -31,7 +31,7 @@ const SingIn = () => {
 
         axios.post('http://localhost:5000/', data).then((response) => {
             console.log(response.data)
-            if (response.data.status == 'true'){
+            if (response.data.status === 'true'){
                 alert('Account created successfully!')
                 navigate('/login')
             }
