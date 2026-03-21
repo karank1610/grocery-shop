@@ -11,16 +11,16 @@ const BrandBlock = () => {
             <div className="brand-main">
                 <div className="container">
                     <div className="brand-child-main">
-                        <div className="brand-child"><img src="assets/img/brand1.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand2.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand3.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand4.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand5.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand1.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand2.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand3.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand4.jpg" /></div>
-                        <div className="brand-child"><img src="assets/img/brand5.jpg" /></div>
+                        <div className="brand-child"><img src="assets/img/brand1.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand2.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand3.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand4.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand5.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand1.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand2.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand3.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand4.jpg" alt="brand"/></div>
+                        <div className="brand-child"><img src="assets/img/brand5.jpg" alt="brand"/></div>
                     </div>
                 </div>
             </div>

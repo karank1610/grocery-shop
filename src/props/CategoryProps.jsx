@@ -5,7 +5,7 @@ const CategoryProps = (props) => {
         <>
             <div className="category-child">
                 <div className="category-img">
-                    <a href=""><img src={props.img} alt="category" /></a>
+                    <a href="/"><img src={props.img} alt="category" /></a>
                 </div>
                 <div className="category-name">
                     <span>{props.name}</span>
