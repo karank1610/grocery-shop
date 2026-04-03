@@ -1,10 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 import products from './data/products';
 import { useEffect } from "react";
+import { useCart } from "./context/CartContext";
 
 const ProductDetails = () => {
 
     const { id } = useParams();
+    const { addToCart } = useCart();
     const product = products.find(p => p.id === Number(id));
 
     useEffect(()=>{
@@ -13,6 +15,15 @@ const ProductDetails = () => {
             },[])
 
     if (!product) return <p>Product not found.</p>;
+
+    const handleAddToCart = () => {
+        addToCart({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            img: product.img,
+        });
+    };
 
     return (
         <div className="product-detail-main">
@@ -48,7 +59,7 @@ const ProductDetails = () => {
                             </div>
                         </div>
 
-                        <button className="add-to-cart-btn">Add to Cart</button>
+                        <button className="add-to-cart-btn" onClick={handleAddToCart}>Add to Cart</button>
                         <Link to="/" className="back-link">← Back to products</Link>
                     </div>
                 </div>

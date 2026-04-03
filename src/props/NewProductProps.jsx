@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 const NewProductProps = (props) => {
+    const {addToCart} = useCart();
+
+    const handleAddToCart = (e)=>{
+        e.preventDefault();
+        addToCart({
+            id:props.id,
+            name: props.name,
+            price: props.price,
+            img: props.img,
+        });
+    }
+
     return (
         <div className="new-product-child">
             <div className="new-product-img">
@@ -19,7 +32,7 @@ const NewProductProps = (props) => {
                 </Link>
                 <span className="new-product-price">{props.price}</span>
                 <div className="new-product-shop-btn">
-                    <p><Link to={`/product/${props.id}`}>add to cart</Link></p>
+                    <p><Link to={`/product/${props.id}`} onClick={handleAddToCart}>add to cart</Link></p>
                 </div>
             </div>
         </div>

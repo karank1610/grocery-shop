@@ -7,10 +7,12 @@ import { IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
+import { useCart } from "../context/CartContext";
 
 const Header = () => {
     // const [user, setUser] = useState(null);
     const { user, login, logout } = useContext(AuthContext);
+    const {totalItems} = useCart();
 
     useEffect(() => {
 
@@ -106,7 +108,7 @@ const Header = () => {
                         <div className="inner-header-center">
                             <div className="center-left-content">
                                 <div className="header-logo">
-                                    <img src="assets/img/grocery-logo.jpg" alt="logo" />
+                                    <img src="/assets/img/grocery-logo.jpg" alt="logo" />
                                 </div>
                             </div>
                             <div className="center-right-content">
@@ -117,7 +119,7 @@ const Header = () => {
                                 <div className="cart">
                                     <GiShoppingBag className="shopping-cart-icon" />
                                     <div className="cart-info">
-                                        <span>Item(s)</span>
+                                        <span>{totalItems} Item(s)</span>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ const Footer = () => {
                             <div className="services-main">
                                 <div className="services-child">
                                     <div className="services-icon">
-                                        <img src="assets/img/online-support.png" alt="services" />
+                                        <img src="/assets/img/online-support.png" alt="services" />
                                     </div>
                                     <div className="services-content">
                                         <span><strong>24/7 Online Support</strong> <br />Trained staffs are ready to help 24/7</span>
@@ -19,7 +19,7 @@ const Footer = () => {
                                 </div>
                                 <div className="services-child">
                                     <div className="services-icon">
-                                        <img src="assets/img/money-back.png" alt="services" />
+                                        <img src="/assets/img/money-back.png" alt="services" />
                                     </div>
                                     <div className="services-content">
                                         <span><strong>Money Back Guarantee</strong> <br />100% money back guarantee</span>
@@ -27,7 +27,7 @@ const Footer = () => {
                                 </div>
                                 <div className="services-child">
                                     <div className="services-icon">
-                                        <img src="assets/img/free-shipping.png" alt="services" />
+                                        <img src="/assets/img/free-shipping.png" alt="services" />
                                     </div>
                                     <div className="services-content">
                                         <span><strong>Free Shipping & Return</strong> <br />Free shipping on all orders over $100</span>
