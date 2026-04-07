@@ -2,12 +2,14 @@ import { useParams, Link } from "react-router-dom";
 import products from './data/products';
 import { useEffect } from "react";
 import { useCart } from "./context/CartContext";
+import collections from "./data/collections";
 
 const ProductDetails = () => {
+    const allProducts = [...products, ...collections];
 
     const { id } = useParams();
     const { addToCart } = useCart();
-    const product = products.find(p => p.id === Number(id));
+    const product = allProducts.find(p => p.id === Number(id));
 
     useEffect(()=>{
                 window.scrollTo(0,0);

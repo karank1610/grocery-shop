@@ -1,6 +1,6 @@
 const products = [
     {
-        id: 1,
+        id: 101,
         img: '/assets/img/collection5.jpg',
         name: 'Perspiciatis Unde',
         price: '$99.00',
@@ -17,7 +17,7 @@ const products = [
         longDescription: 'This product represents the pinnacle of modern craftsmanship. Every detail has been carefully considered — from the choice of materials to the finishing touches that set it apart from the rest. Whether you are looking for something to use daily or a special occasion piece, this product delivers on all fronts. Our team spent months perfecting the design to ensure maximum comfort and longevity. The materials are sourced responsibly, ensuring that every purchase you make is not only good for you but also for the environment. This is more than just a product — it is a lifestyle statement.',
     },
     {
-        id: 2,
+        id: 102,
         img: '/assets/img/collection2.jpg',
         name: 'Omnis Iste',
         price: '$199.00',
@@ -34,7 +34,7 @@ const products = [
         longDescription: 'Introducing a product that seamlessly blends form and function. Born from a desire to create something truly timeless, every aspect of this item has been designed to stand the test of time. The elegant profile and refined finish make it a versatile companion whether you are at home, at work, or out exploring the world. Crafted by skilled artisans using only the finest materials, it offers an unmatched level of quality that you can feel from the very first touch. We believe that true luxury lies in the details, and this product is a testament to that belief.',
     },
     {
-        id: 3,
+        id: 103,
         img: '/assets/img/collection4.jpg',
         name: 'Accusantium Dolore',
         price: '$299.00',
@@ -51,7 +51,7 @@ const products = [
         longDescription: 'This is not just a product — it is a declaration. Designed for individuals who lead with confidence, it carries an unmistakable presence in any setting. The bold design language is matched by exceptional build quality, ensuring that it not only looks great but performs flawlessly over time. Made with cutting-edge techniques and carefully chosen materials, it has been engineered to withstand the demands of modern life. Whether you are pushing boundaries or simply want the best, this product rises to the occasion every single time.',
     },
     {
-        id: 4,
+        id: 104,
         img: '/assets/img/collection7.jpg',
         name: 'Rem Aperiam',
         price: '$249.00',
